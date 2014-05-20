@@ -13,12 +13,14 @@ apt-get -y install nginx-light
 
 echo "       Nginx installed"
 
-echo "-----> Adding Nginx config"
+echo "-----> Adding Nginx config (w/ customizations)"
 
 cat > $build_dir/.nginx.conf <<STUFF
 daemon off;
 error_log stderr;
 worker_processes 1;
+
+types_hash_bucket_size 64;
 types_hash_max_size 2048;
 
 events {
