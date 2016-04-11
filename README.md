@@ -1,3 +1,5 @@
+This project is deprecated and unmaintained. Proceed with caution!
+
 # Dokku Static Buildpack using Nginx
 
 Two things to make this work:
